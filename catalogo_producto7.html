@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sueter Cata | Catálogo ANNID</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">ANNID</div>
+        <nav>
+            <a href="../index.html">Inicio</a> 
+            <a href="catalogo.html">Catálogo</a>
+        </nav>
+    </header>
+
+   
+    <section class="detalles-seccion">
+        <div class="detalles-contenedor">
+            <div class="detalle-imagen">
+                <img src="https://i.postimg.cc/nrchgXFk/sueter-cata-chocolate.jpg" alt="Detalle de prenda">
+            </div>
+            <div class="detalle-info">
+                <span class="categoria">Exclusivo de ANNID</span>
+                <h2>Sueter Cata</h2>
+                <p class="precio-grande">s/ 50.00</p>
+                
+                <div class="opciones">
+    <span class="titulo-opcion">Colores disponibles:</span>
+    <div class="colores-box">
+        <button class="color-btn" onclick="seleccionarColor(this, 'Chocolate')">Chocolate</button>
+    </div>
+</div>
+
+<div class="opciones">
+    <span class="titulo-opcion">Tallas disponibles:</span>
+    <div class="tallas-box">
+        <button class="talla-btn" onclick="seleccionarTalla(this, 'S')">S</button>
+        <button class="talla-btn" onclick="seleccionarTalla(this, 'M')">M</button>
+    </div>
+</div>
+
+<div class="opciones">
+    <span class="titulo-opcion">Cantidad:</span>
+    <select id="cantidad-select" class="cantidad-dropdown" onchange="actualizarCantidad()">
+        <option value="Agotado">Agotado</option>
+    </select>
+</div>
+    </section>
+
+<footer>
+    <div class="footer-contenido">
+        <p>&copy; 2026 ANNID. Diseñado con amor para amantes de la moda.</p>
+        
+        <div class="footer-redes">
+            <a href="https://www.instagram.com/anidd.22?igsh=MWRzdWRzYmo0OTdjbg==" target="_blank" class="instagram-link">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ56S3XVx_siGrbcwh6R-yzBMZBgwwRrzRTQQ&s" alt="Instagram" class="insta-logo-img">
+                @annid.collection
+            </a>
+        </div>
+    </div>
+</footer>
+
+</body>
